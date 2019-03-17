@@ -1,5 +1,5 @@
 # node-mongodb-express-
-# 食惠
+# 百联商城
 
 #### 介绍
 一个商城网站
