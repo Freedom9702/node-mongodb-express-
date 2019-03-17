@@ -1,0 +1,223 @@
+.cart-table {
+  width: 990px;
+  height: auto;
+  margin: 0 auto; }
+  .cart-table .cart-header {
+    width: 990px;
+    height: 44px;
+    font: 14px/44px "";
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    background: red; }
+  .cart-table .cart-name {
+    width: 990px;
+    height: 34px;
+    font: 14px/34px "";
+    display: inline;
+    margin-top: 16px;
+    border-bottom: 1px solid #ccc;
+    background: #00FFFF; }
+  .cart-table .cart-list {
+    width: 990px;
+    height: auto; }
+    .cart-table .cart-list li {
+      width: 990px;
+      height: auto;
+      border: 1px solid #ccc;
+      float: left;
+      display: inline;
+      border-bottom: 1px solid #ccc; }
+      .cart-table .cart-list li .active-line {
+        width: 932px;
+        height: 40px;
+        margin-left: 38px;
+        float: left;
+        display: inline;
+        border-bottom: 1px dashed #ccc;
+        position: relative; }
+        .cart-table .cart-list li .active-line .point {
+          position: absolute;
+          top: 18px;
+          left: -21px;
+          float: left;
+          display: inline;
+          width: 10px;
+          height: 10px;
+          color: #ccc;
+          font-size: 22px;
+          line-height: 10px; }
+        .cart-table .cart-list li .active-line .message {
+          width: 480px;
+          height: 40px;
+          line-height: 40px;
+          color: #333;
+          float: left;
+          display: inline;
+          overflow: hidden; }
+          .cart-table .cart-list li .active-line .message a {
+            color: #0079d7; }
+        .cart-table .cart-list li .active-line .item-price {
+          width: 120px;
+          height: 40px;
+          line-height: 40px;
+          margin-left: 15px;
+          float: left;
+          display: inline;
+          color: #333; }
+        .cart-table .cart-list li .active-line .else-message {
+          width: 300px;
+          height: 40px;
+          line-height: 40px;
+          color: #333;
+          float: right;
+          display: inline;
+          overflow: hidden;
+          text-align: right; }
+          .cart-table .cart-list li .active-line .else-message span {
+            color: #e6133c; }
+      .cart-table .cart-list li .select {
+        width: 990px;
+        height: auto; }
+        .cart-table .cart-list li .select .cart-table-line {
+          width: 990px;
+          height: 110px;
+          float: left;
+          display: inline; }
+          .cart-table .cart-list li .select .cart-table-line .chk-line {
+            width: 35px;
+            height: 80px;
+            float: left;
+            display: inline;
+            margin: 15px 0 0 5px; }
+          .cart-table .cart-list li .select .cart-table-line .item-box {
+            width: 300px;
+            height: 80px;
+            margin-top: 15px;
+            float: left;
+            display: inline;
+            position: relative; }
+            .cart-table .cart-list li .select .cart-table-line .item-box img {
+              width: 78px;
+              height: 78px;
+              border: 1px solid #ddd;
+              float: left;
+              display: inline;
+              margin-right: 10px; }
+            .cart-table .cart-list li .select .cart-table-line .item-box .name {
+              width: 200px;
+              height: 36px;
+              line-height: 18px;
+              float: left;
+              display: inline;
+              overflow: hidden;
+              word-break: break-all;
+              text-overflow: ellipsis; }
+            .cart-table .cart-list li .select .cart-table-line .item-box .message-line {
+              width: 210px;
+              height: 18px;
+              float: left;
+              display: inline;
+              margin-top: 2px; }
+          .cart-table .cart-list li .select .cart-table-line .type-box {
+            width: 160px;
+            height: 80px;
+            float: left;
+            display: inline;
+            padding: 15px 10px 14px;
+            overflow: hidden; }
+          .cart-table .cart-list li .select .cart-table-line .item-price-box {
+            width: 120px;
+            height: 80px;
+            line-height: 18px;
+            margin: 15px 0 0 15px;
+            float: left;
+            display: inline; }
+            .cart-table .cart-list li .select .cart-table-line .item-price-box .price {
+              width: 120px;
+              height: 18px;
+              line-height: 18px;
+              float: left;
+              display: inline;
+              color: #000; }
+            .cart-table .cart-list li .select .cart-table-line .item-price-box .icon {
+              width: 120px;
+              height: 18px;
+              line-height: 18px;
+              float: left;
+              display: inline;
+              margin-top: 2px;
+              color: #fff; }
+              .cart-table .cart-list li .select .cart-table-line .item-price-box .icon i {
+                width: auto;
+                height: 18px;
+                line-height: 18px;
+                float: left;
+                display: inline;
+                margin-right: 4px;
+                color: #FFFF00;
+                background: red;
+                padding: 0 4px;
+                border-radius: 3px;
+                margin-bottom: 4px; }
+          .cart-table .cart-list li .select .cart-table-line .number-box {
+            width: 80px;
+            height: 60px;
+            line-height: 18px;
+            color: #333;
+            float: left;
+            display: inline;
+            margin-top: 15px;
+            position: relative; }
+            .cart-table .cart-list li .select .cart-table-line .number-box .input-line {
+              line-height: 18px;
+              color: #333; }
+              .cart-table .cart-list li .select .cart-table-line .number-box .input-line em {
+                width: 17px;
+                height: 24px;
+                line-height: 24px;
+                background: #f0f0f0;
+                margin-top: 2px;
+                float: left;
+                display: inline;
+                border: 1px solid #eee;
+                color: #333333;
+                text-align: center;
+                cursor: pointer; }
+              .cart-table .cart-list li .select .cart-table-line .number-box .input-line #val {
+                width: 40px;
+                height: 24px;
+                line-height: 24px;
+                border: 1px solid #aaa;
+                color: #333;
+                text-align: center;
+                float: left;
+                display: inline;
+                margin-top: 2px; }
+          .cart-table .cart-list li .select .cart-table-line .price-box {
+            width: 100px;
+            height: 80px;
+            margin-left: 40px;
+            margin-top: 15px;
+            float: left;
+            display: inline; }
+            .cart-table .cart-list li .select .cart-table-line .price-box .price {
+              width: 108px;
+              height: 18px;
+              line-height: 18px;
+              float: left;
+              display: inline;
+              color: #d62233;
+              font-weight: 700;
+              overflow: hidden; }
+          .cart-table .cart-list li .select .cart-table-line .action-box {
+            width: 62px;
+            height: 80px;
+            float: right;
+            display: inline;
+            margin-right: 20px;
+            line-height: 18px;
+            margin-top: 15px; }
+            .cart-table .cart-list li .select .cart-table-line .action-box .add-fav {
+              color: #333; }
+            .cart-table .cart-list li .select .cart-table-line .action-box .delete {
+              color: #999; }

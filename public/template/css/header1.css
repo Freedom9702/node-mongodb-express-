@@ -1,0 +1,79 @@
+@charset "UTF-8";
+.header {
+  height: 96px;
+  min-width: 1190px; }
+  .header .logo {
+    width: 410px;
+    height: 60px;
+    margin-top: 18px;
+    float: left; }
+    .header .logo .logo1 {
+      width: 190px;
+      float: left; }
+    .header .logo .logo2 {
+      float: left;
+      margin-left: 25px; }
+  .header .header-search {
+    width: 780px;
+    position: absolute;
+    left: 450px;
+    margin-top: 25px; }
+    .header .header-search .header-search-top {
+      width: 516px;
+      height: 35px;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px; }
+      .header .header-search .header-search-top .header-search-input {
+        width: 428px;
+        padding: 2px 0 2px 2px;
+        background: #ff3d3d;
+        float: left;
+        position: relative;
+        z-index: 1001; }
+        .header .header-search .header-search-top .header-search-input .inval {
+          background: #fff;
+          height: 31px;
+          overflow: hidden;
+          padding: 0 10px;
+          vertical-align: middle; }
+          .header .header-search .header-search-top .header-search-input .inval #gray {
+            color: #a9a9a9;
+            height: 19px;
+            font: 13px/19px "";
+            border: 0;
+            width: 406px;
+            padding: 6px 0; }
+      .header .header-search .header-search-top .header-search-btn {
+        height: 35px;
+        width: 85px;
+        float: left;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        overflow: hidden; }
+        .header .header-search .header-search-top .header-search-btn #btn {
+          height: 35px;
+          width: 85px;
+          border: 0;
+          cursor: pointer;
+          background: #ff3d3d;
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+          color: #fff;
+          font: 14px/35px "微软雅黑"; }
+  .header .header-search-font {
+    width: 490px;
+    overflow: hidden;
+    clear: both;
+    height: 28px;
+    font: 12px/28px "微软雅黑";
+    margin-left: -5px; }
+    .header .header-search-font a:link {
+      color: #999;
+      float: left;
+      margin: 0 5px;
+      display: inline-block; }
+    .header .header-search-font span {
+      float: left;
+      color: #e5e5e5;
+      margin-left: 5px;
+      display: inline-block; }

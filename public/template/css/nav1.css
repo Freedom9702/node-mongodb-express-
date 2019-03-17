@@ -1,0 +1,77 @@
+@charset "UTF-8";
+.nav {
+  height: 35px;
+  background: #333;
+  min-width: 1190px;
+  border-bottom: 0;
+  position: relative;
+  z-index: 996; }
+  .nav .nav-left {
+    float: left;
+    height: 35px;
+    width: 190px;
+    position: relative;
+    font: 12px/19px ""; }
+    .nav .nav-left .nav-leftfont {
+      background: #333;
+      cursor: pointer;
+      height: 35px;
+      color: #fff;
+      font-size: 14px;
+      line-height: 35px; }
+      .nav .nav-left .nav-leftfont i {
+        float: right;
+        margin-right: 13px;
+        height: 6px;
+        width: 9px;
+        background: url(img/nav_sprite.png) no-repeat 0 -125px;
+        margin-top: 14px;
+        display: inline-block; }
+    .nav .nav-left .shownav {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 35px; }
+      .nav .nav-left .shownav .newbg {
+        width: 190px;
+        height: 431px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #151515;
+        opacity: .75; }
+      .nav .nav-left .shownav .int-nav {
+        position: relative;
+        z-index: 4;
+        overflow: hidden;
+        height: 421px;
+        width: 190px;
+        text-align: center;
+        color: #fff;
+        padding: 11px 0 9px;
+        font: 12px/28px ""; }
+  .nav .nav-right {
+    max-width: 1000px;
+    float: left;
+    font: 15px/35px "微软雅黑";
+    color: #000;
+    height: 35px;
+    overflow: hidden;
+    white-space: nowrap; }
+    .nav .nav-right ul li {
+      padding: 0;
+      line-height: 35px;
+      height: 35px;
+      background: #333;
+      float: left;
+      position: relative;
+      z-index: 999; }
+      .nav .nav-right ul li a:link {
+        color: #fff;
+        padding: 0 28px;
+        line-height: 35px;
+        height: 35px;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        transition: all .2s ease-in 0s; }

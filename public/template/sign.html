@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+</head>
+<style>
+	.fl{float:left}
+	.fr{float:right}
+	.wrap{width:950px;margin:0 auto;}
+	.header{height:110px;margin-top: 29px;}
+	.header .logo{float:left;}
+	.header .logo2{float:left;}
+	.banner{width:100%;height:543px;padding: 30px 0 25px 0;background: url(../img/login-body.jpg);}
+	.banner .banner-main{width:488px;margin: 0 auto;border:6px solid #e2e2e2;background: #fff;font:12px/1.5 "";}
+	.banner .banner-main .banner-main-center{width:300px;margin:0 auto;padding:45px 0;position: relative;}
+	/* .banner .banner-main .banner-main-center ul{} */
+	.banner .banner-main .banner-main-center ul li{list-style: none;}
+	.banner .banner-main .banner-main-center ul li .title{height:50px;line-height:45px;}
+	.banner .banner-main .banner-main-center ul li .login-item{width:300px;height:46px;margin-top: 10px;padding-bottom: 10px;position: relative;}
+	.banner .banner-main .banner-main-center ul li .login-item input{width:250px;font:12px/1.5 "";vertical-align: middle;text-indent:20px;}
+	.banner .banner-main .banner-main-center ul li .login-item i{position: absolute;top:4px;left:4px;}
+	.banner .banner-main .banner-main-center ul li .login-font fr a{display: block;}
+	.banner .banner-main .banner-main-center ul li .loginsubmit{width:250px;height:36px;}
+	.banner .banner-main .banner-main-center ul li .loginsubmit input{width:260px;height:36px;border:none;background: red;font:18px/1.5 "";color:#fff}
+	.banner .banner-main .banner-main-center ul .msg{width: 260px;height: 50px;text-align: center;position: relative;top: 25px;line-height: 50px;font-size: 18px;}
+	.footer{padding-top: 30px;text-align: center;}
+	.footer a{text-decoration: none;}
+	.footer .nav{line-height: 24px;text-align: center;padding-top: 10px;color: #cccccc;font:12px/1.5 "";}
+	.footer .nav a{color:#003333;}
+	.footer .copyright{font:12px/24px "";text-align: center;}
+	.footer .copyright a{display: block;}
+	.footer .police{font:12px/24px "";text-align: center;}
+</style>
+<body>
+	<div class="header">
+		<div class="wrap">
+			<a href="#" class="logo"><img src="../img/logon-logo.png"/></a>
+			<a href="#" class="logo2"><img src="../img/logon-logofont.png"/></a>	
+		</div>
+	</div>
+	
+	<div class="banner">
+		<div class="banner-main">
+			<div class="banner-main-center">
+				<ul>
+					<li>
+						<div class="title">
+							<div class="title-fl fl"><a href="sign.html">会员登录</a></div>
+							<div class="title-fr fr"><a href="register.html">注册新账号</a></div>
+						</div>
+						<div class="login-item">
+							<input type="text" id="loginId" placeholder="用户名/手机号/邮箱"/>
+							<i><img src="../img/userpic.png"/></i>
+						</div>
+						<div class="login-item">
+							<input type="text" id="password" placeholder="密码" />
+							<i><img src="../img/passwordpic.png"/></i>
+						</div>
+						<div class="login-item verifyCode">
+							<input type="text" id="text" placeholder="验证码" />
+							<i><img src="../img/passwordpic (1).png"/></i>
+						</div>
+						<div class="login-font">
+							<div class="fr">
+								<a href="#">忘记密码</a>
+							</div>
+						</div>
+						<div class="loginsubmit">
+							<input type="button" name="btn" id="btn" value="登录" />
+						</div>
+					</li>
+					<span class="msg"></span>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="nav">
+			<a href="#">关于我们</a>
+			<span>|</span>
+			<a href="#">联系我们</a>
+			<span>|</span>
+			<a href="#">加盟合作</a>
+			<span>|</span>
+			<a href="#">诚征英才</a>
+			<span>|</span>
+			<a href="#">友情链接</a>
+			<span>|</span>
+			<a href="#">新零售合作</a>
+		</div>
+		<div class="copyright">
+			百联集团有限公司版权所有 
+			<span>|</span>
+			  客服电话：400-900-8800  
+			 <span>|</span>
+			  沪ICP备15028847号
+			  <a href="#">互联网药品信息服务资质证书编号：沪-（非营业性）-2016-0044</a>
+			  <a href="#">全渠道增值电信业务经营许可证</a>
+		</div>
+		<div class="police">
+			<a href="#">
+				<img src="../img/gongan.png" alt="" />
+				<span>沪公网安备 31010102002366</span>
+			</a>
+			<a href="#">
+				<img src="../img/gongan.png" alt="" />
+				<span>网购大家评</span>
+			</a>
+			<a href="#">
+				<img src="../img/gongan.png" alt="" />
+				<span>上海工商</span>
+			</a>
+			<a href="#">
+				<img src="../img/gongan.png" alt="" />
+				<span>经营执照</span>
+			</a>
+		</div>
+	</div>
+
+
+</body>
+<script src="../js/ajax.3.0.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	function Sign(options){
+		this.btn = options.btn;
+		this.loginId = options.loginId;
+		this.password = options.password;
+		this.msg = options.msg;
+		this.url = options.url;
+		this.init()
+	}
+	
+	Sign.prototype.init = function(){
+        var that = this;
+        this.btn.onclick = function(){
+            that.load()
+        }
+    }
+    Sign.prototype.load = function(){
+        var that = this;
+        ajaxPost(this.url,{
+            username:this.loginId.value,
+            password:this.password.value
+        }).then(function(res){
+            res = JSON.parse(res)
+			// console.log(res.error)
+			if(res.error == 0){
+				location.href = "index.html"
+			}
+        },function(code){
+            console.log("有可能是网络原因或接口错误，或服务器问题，反正不一定是登录失败")
+        })
+    }
+	
+	new Sign({
+		btn:document.querySelector("#btn"),
+		loginId:document.querySelector("#loginId"),
+		password:document.querySelector("#password"),
+		msg:document.querySelector(".msg"),
+		url:"/api/login"})
+
+</script>
+</html>
